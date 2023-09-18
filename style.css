@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ddd;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.flex {
+  display: flex;
+}
+.align {
+  align-items: center;
+}
+.justify {
+  justify-content: space-between;
+}
+
+.container {
+  width: 320px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+.pad {
+  padding: 0 15px;
+}
+.nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav img {
+  width: 130px;
+}
+.side-nav {
+  gap: 1.5vw;
+}
+
+.nav .side-nav i {
+  font-size: 1.5vw;
+}
+
+.stories {
+  /* background-color: red; */
+  height: 70px;
+  padding-left: 15px;
+  align-items: center;
+  overflow: scroll;
+  gap: 20px;
+  overflow-y: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.stories::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+.image img {
+  width: 50px;
+  object-position: center;
+  
+}
+.story p {
+  font-size: 8px;
+  font-weight: 600;
+  
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.full-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  display: none;
+  
+}
+
+.wid{
+  width: 100%;
+  height: 100%;
+}
